@@ -15,7 +15,7 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        if (Input.GetKey(KeyCode.W) && isGrounded)
         {
             HandleMovementUp();
         }
@@ -72,4 +72,11 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+       if (other.gameObject.CompareTag("coins"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
