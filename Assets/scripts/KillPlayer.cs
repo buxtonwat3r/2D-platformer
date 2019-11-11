@@ -8,7 +8,8 @@ public class KillPlayer : MonoBehaviour{
     {
         if (col.transform.CompareTag("Player"))
         {
-            col.transform.position = spawnpoint.position;
+            //col.transform.position = spawnpoint.position;
+            Application.LoadLevel("main menu");
         }
     }
 }
