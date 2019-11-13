@@ -78,5 +78,9 @@ public class PlayerScript : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        {
+            ScoreTextScript
+        }
+
     }
 }
