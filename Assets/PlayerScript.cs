@@ -76,11 +76,12 @@ public class PlayerScript : MonoBehaviour
     {
        if (other.gameObject.CompareTag("coins"))
         {
+            scorecounter.coinAmount += 1;
             Destroy(other.gameObject);
         }
-        {
-            ScoreTextScript
-        }
+        
+            
+        
 
     }
 }
