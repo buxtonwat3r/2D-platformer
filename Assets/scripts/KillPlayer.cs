@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 public class KillPlayer : MonoBehaviour{
     [SerializeField] Transform spawnpoint;
 
@@ -8,8 +9,9 @@ public class KillPlayer : MonoBehaviour{
     {
         if (col.transform.CompareTag("Player"))
         {
-            //col.transform.position = spawnpoint.position;
-            Application.LoadLevel("main menu");
+            SoundManagerScript.PlaySound("dead");
+            Thread.Sleep(800);
+             Application.LoadLevel("main menu");
         }
     }
 }

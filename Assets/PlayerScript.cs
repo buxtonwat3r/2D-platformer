@@ -34,8 +34,9 @@ public class PlayerScript : MonoBehaviour
     private void HandleMovementUp()
     {
         myRigidbody.velocity = Vector2.up * 10.0f;
+        SoundManagerScript.PlaySound("jump");
     }
-    
+        
     private void HandleMovmentR()
     {
         myRigidbody.velocity = new Vector2( (Vector2.right * 5.0f).x , myRigidbody.velocity.y);
@@ -77,7 +78,9 @@ public class PlayerScript : MonoBehaviour
        if (other.gameObject.CompareTag("coins"))
         {
             scorecounter.coinAmount += 1;
+            SoundManagerScript.PlaySound("coins");
             Destroy(other.gameObject);
+
         }
         
             

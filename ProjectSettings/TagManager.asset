@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - coins
+  - Jump
   layers:
   - Default
   - TransparentFX
