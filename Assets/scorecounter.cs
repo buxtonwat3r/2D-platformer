@@ -11,6 +11,7 @@ public class scorecounter : MonoBehaviour
 
     void Start()
     {
+        coinAmount = 0;
         text = GetComponent<Text>();
     }
 
