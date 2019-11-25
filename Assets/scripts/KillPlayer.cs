@@ -7,8 +7,11 @@ public class KillPlayer : MonoBehaviour{
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        Debug.Log("Collision");
+
         if (col.transform.CompareTag("Player"))
         {
+            Debug.Log("Was player");
             SoundManagerScript.PlaySound("stab");
             Thread.Sleep(200);
             SoundManagerScript.PlaySound("dead");

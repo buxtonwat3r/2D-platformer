@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NextButton : MonoBehaviour
 {
+
+    public string levelToLoad;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,7 @@ public class NextButton : MonoBehaviour
     public void ButtonInteract()
     {
         Debug.Log("Our button was clicked");
-        Application.LoadLevel("main menu");
+        Application.LoadLevel(levelToLoad);
     }
 
 }
