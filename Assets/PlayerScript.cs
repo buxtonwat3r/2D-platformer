@@ -29,6 +29,20 @@ public class PlayerScript : MonoBehaviour
         {
             HandleMovementL();
         }
+        if (Input.GetKey(KeyCode.UpArrow) && isGrounded)
+        {
+            HandleMovementUp();
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            HandleMovmentR();
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            HandleMovementL();
+        }
     }
 
     private void HandleMovementUp()
