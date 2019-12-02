@@ -11,7 +11,11 @@ public class scorecounter : MonoBehaviour
 
     void Start()
     {
-        coinAmount = 0;
+        if(tag != "levelCompleteScore")
+        {
+            coinAmount = 0;
+        }
+
         text = GetComponent<Text>();
     }
 

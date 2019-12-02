@@ -7,6 +7,8 @@ TagManager:
   - ground
   - coins
   - Jump
+  - levelCompleteScore
+  - coinText
   layers:
   - Default
   - TransparentFX
