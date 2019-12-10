@@ -22,6 +22,7 @@ public class NextButton : MonoBehaviour
     {
         Debug.Log("Our button was clicked");
         Application.LoadLevel(levelToLoad);
+
     }
 
 }
